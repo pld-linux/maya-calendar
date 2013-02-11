@@ -1,15 +1,15 @@
 %define		rel		0.1
 %define		subver	408
 Summary:	GCal-syncing GTK+ Calendar application
-Name:		maya
-Version:	0.1.0
+Name:		maya-calendar
+Version:	0.2
 Release:	0.%{subver}.%{rel}
 License:	GPL v3
 Group:		X11/Applications
-Source0:	%{name}.tar.bz2
+Source0:	maya.tar.bz2
 # Source0-md5:	e4df43c43a68d6764298fa7a31476db4
 URL:		https://launchpad.net/maya
-BuildRequires:	cmake
+BuildRequires:	cmake >= 2.8
 BuildRequires:	evolution-data-server-devel >= 3.2.0
 BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel
@@ -28,7 +28,7 @@ Maya is a slim, lightweight, GCal-syncing GTK+ Calendar application
 written in Vala, specifically for the elementary project.
 
 %prep
-%setup -q -n %{name}
+%setup -q -n maya
 
 %build
 install -d build
