@@ -11,7 +11,7 @@ Source0:	maya.tar.bz2
 URL:		https://launchpad.net/maya
 BuildRequires:	cmake >= 2.8
 BuildRequires:	evolution-data-server-devel >= 3.2.0
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel
 BuildRequires:	granite-devel
 BuildRequires:	gtk+3-devel
